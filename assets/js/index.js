@@ -1,25 +1,26 @@
 console.log("Entro index.js");
 
-const btnBlue = document.getElementById("btnBlue");
+let inputTitulo = document.getElementById("inputTitulo");
+let inputEstreno = document.getElementById("inputEstreno");
+let inputGenero = document.getElementById("inputGenero");
+let inputImagen = document.getElementById("inputImagen");
+let inputSinopsis = document.getElementById("inputSinposis");
 
-// btnBlue.addEventListener("click", function () {
-//     console.log("click en el boton azul!!!");
-// });
+//referencias a los botones
 
-function clickBotonAzul() {
-    console.log("click en boton");
+const btnAgregar = document.getElementById('btnAgregar');
+const btnBorrarTodo = document.getElementById('btnBorrarTodo');
+
+const divPeliculas = document.getElementById("divPeliculas");
+const alertSinPeliculas = document.getElementById("alertSinPeliculas");
+
+function guardarPelicula () {
+    console.log("Entro funcion guardar pelicula");
 }
 
-function OverButtonAzul(){
-    console.log("Entro evento over");
+function borrarTodo() {
+    console.log("Entro a borrar todo");
 }
 
-function changeBackgroundColorPage(color) {
-    document.body.style.backgroundColor = color;
-}
-
-btnBlue.addEventListener("click", ()=> {
-    changeBackgroundColorPage("Blue")
-});
-
-btnBlue.addEventListener("mouseover", OverButtonAzul);
+btnAgregar.addEventListener("click", guardarPelicula);
+btnBorrarTodo.addEventListener("click", borrarTodo);
