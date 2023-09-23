@@ -14,7 +14,29 @@ const btnBorrarTodo = document.getElementById('btnBorrarTodo');
 const divPeliculas = document.getElementById("divPeliculas");
 const alertSinPeliculas = document.getElementById("alertSinPeliculas");
 
+class Pelicula {
+    constructor(titulo, estreno, genero, imagen, sinopsis){
+        this.titulo = titulo;
+        this.estreno = estreno;
+        this.genero = genero;
+        this.imagen = imagen;
+        this.sinopsis = sinopsis;
+    }
+}
+
 function guardarPelicula () {
+    let titulo = inputTitulo.value;
+    let titulo = inputEstreno.value;
+    let titulo = inputGenero.value;
+    let titulo = inputImagen.value;
+    let titulo = inputSinopsis.value;
+    console.log(
+        titulo,
+        estreno,
+        genero,
+        imagen,
+        sinopsis
+    );
     console.log("Entro funcion guardar pelicula");
 }
 
